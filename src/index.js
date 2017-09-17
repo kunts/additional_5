@@ -11,7 +11,7 @@ module.exports = function check(str, bracketsConfig) {
             } else if (flag === 0){
                arr.push(str[i]);
                flag = 1;
-            } else if(arr[arr.length -1] === bracketsConfig[j][0] && arr.length !=0){
+            } else if(arr[arr.length -1] === bracketsConfig[j][0]){
                flag = 0 ;
                arr.pop();
                break;
